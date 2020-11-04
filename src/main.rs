@@ -21,5 +21,6 @@ fn main() {
         name: "leo".to_string(),
         age: 25
     };
+
     println!("Hello {}", leo);
 }
