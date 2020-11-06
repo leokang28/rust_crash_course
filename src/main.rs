@@ -4,6 +4,9 @@ use std::fmt::{
     Formatter,
 };
 
+mod iterator;
+
+mod fibs;
 
 struct Person {
     name: String,
@@ -17,10 +20,13 @@ impl Display for Person {
 }
 
 fn main() {
-    let leo = Person {
-        name: "leo".to_string(),
-        age: 25
+    // iterator::main();
+    // fibs::main();
+    let a: u8 = 254;
+    match a.checked_add(2) {
+        None => println!("overflow, max of u8 is {}", u8::MAX),
+        Some(v) => println!("{}", v),
     };
-
-    println!("Hello {}", leo);
 }
+
+
