@@ -1,4 +1,3 @@
-
 #[derive(Debug)]
 struct Foo(i32);
 

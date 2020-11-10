@@ -1,9 +1,6 @@
 mod parse_args;
 
-use std::fmt::{
-    Display,
-    Formatter,
-};
+use std::fmt::{Display, Formatter};
 
 use crate::parse_args::Frame;
 
@@ -26,7 +23,7 @@ struct Ball {
 
 struct Game {
     frame: Frame,
-    ball: Ball
+    ball: Ball,
 }
 
 impl Game {
@@ -48,7 +45,6 @@ impl Game {
     fn step(&mut self) {
         self.ball.bounce(&self.frame);
         self.ball.mv();
-
     }
 }
 
@@ -58,7 +54,6 @@ impl Game {
 
 impl Display for Game {
     fn fmt(&self, fmt: &mut Formatter) -> std::fmt::Result {
-
         let top_bottom = |fmt: &mut Formatter| {
             write!(fmt, "+")?;
             for _ in 0..self.frame.width {
@@ -118,6 +113,7 @@ fn main() -> Result<(), parse_args::ParseError> {
     let sleep_duration = std::time::Duration::from_millis(33);
     loop {
         println!("{}", game);
-        game.step(); std::thread::sleep(sleep_duration);
+        game.step();
+        std::thread::sleep(sleep_duration);
     }
 }

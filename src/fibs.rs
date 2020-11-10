@@ -5,10 +5,7 @@ struct Fibs {
 
 impl Fibs {
     fn new() -> Fibs {
-        Fibs {
-            x: 0,
-            y: 1
-        }
+        Fibs { x: 0, y: 1 }
     }
 }
 

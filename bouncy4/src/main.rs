@@ -1,5 +1,4 @@
-
-use pancurses::{Window, Input, initscr, endwin};
+use pancurses::{endwin, initscr, Input, Window};
 
 enum VertDir {
     Up,
@@ -44,7 +43,7 @@ impl Game {
             vert_dir: VertDir::Up,
             horiz_dir: HorizDir::Left,
         };
-        Ok(Game {frame, ball})
+        Ok(Game { frame, ball })
     }
 
     fn step(&mut self) {
@@ -82,7 +81,7 @@ impl Ball {
 
 // no longer need: impl Display for Game
 
-fn main () -> Result<(), String> {
+fn main() -> Result<(), String> {
     let window = initscr();
 
     // set the timeout on input to our 33 milliseconds

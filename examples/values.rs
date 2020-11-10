@@ -1,4 +1,4 @@
-fn main () {
+fn main() {
     let number = 1;
     let strs = String::from("哈哈");
 

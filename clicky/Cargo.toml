@@ -1,5 +1,5 @@
 [package]
-name = "rust_crash_course"
+name = "clicky"
 version = "0.1.0"
 authors = ["kangsl <kangsl@weipaitang.com>"]
 edition = "2018"
@@ -8,10 +8,5 @@ edition = "2018"
 
 [dependencies]
 
-[workspace]
-
-members = [
-    "bouncy",
-    "bouncy4",
-    "clicky",
-]
+gtk = "0.8"
+gio = "0.8"

@@ -1,5 +1,4 @@
-fn main () {
-
+fn main() {
     // 1. if else solution
     for i in 0..101 {
         if i % 3 == 0 && i % 5 == 0 {

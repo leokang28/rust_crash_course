@@ -1,10 +1,11 @@
 mod iterator;
 
-mod fibs;
-mod doubler;
-mod into_iter;
 mod closure;
 mod closure_mut_v;
+mod doubler;
+mod fibs;
+mod into_iter;
+mod thread;
 
 fn main() {
     // iterator::main();
@@ -14,7 +15,7 @@ fn main() {
 
     // closure::main();
 
-    closure_mut_v::main();
+    // closure_mut_v::main();
+
+    thread::main();
 }
-
-

@@ -1,5 +1,6 @@
-fn call_a_func<F> (f: F)
-    where F: Fn() -> ()
+fn call_a_func<F>(f: F)
+where
+    F: Fn() -> (),
 {
     f();
 }

@@ -2,7 +2,6 @@ fn main() {
     let mut v_4_while = 0;
     let mut v_4_loop = 0;
 
-
     // loop
     loop {
         println!("v_4_loop = {}", v_4_loop);

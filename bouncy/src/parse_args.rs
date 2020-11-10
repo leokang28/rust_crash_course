@@ -1,5 +1,5 @@
-use std::env::Args;
 use self::ParseError::*;
+use std::env::Args;
 
 #[derive(Debug)]
 pub enum ParseError {
@@ -37,7 +37,6 @@ impl ParseArgs {
 }
 
 pub fn parse_args() -> Result<Frame, ParseError> {
-
     let mut args = ParseArgs::new();
     args.require_arg()?;
 
@@ -49,12 +48,7 @@ pub fn parse_args() -> Result<Frame, ParseError> {
     let width = parse_u32(width_str)?;
     let height = parse_u32(height_str)?;
 
-    Ok(
-        Frame {
-            width,
-            height,
-        }
-    )
+    Ok(Frame { width, height })
 }
 fn parse_u32(v: String) -> Result<u32, ParseError> {
     match v.parse() {
@@ -62,4 +56,3 @@ fn parse_u32(v: String) -> Result<u32, ParseError> {
         Ok(v) => Ok(v),
     }
 }
-
