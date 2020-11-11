@@ -1,11 +1,11 @@
-mod iterator;
-
-mod closure;
-mod closure_mut_v;
-mod doubler;
-mod fibs;
-mod into_iter;
-mod thread;
+// mod iterator;
+// mod closure;
+// mod closure_mut_v;
+// mod doubler;
+// mod fibs;
+// mod into_iter;
+// mod thread;
+mod lifetimes;
 
 fn main() {
     // iterator::main();
@@ -17,5 +17,6 @@ fn main() {
 
     // closure_mut_v::main();
 
-    thread::main();
+    // thread::main();
+    lifetimes::main();
 }
