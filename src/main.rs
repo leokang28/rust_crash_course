@@ -5,7 +5,9 @@
 // mod fibs;
 // mod into_iter;
 // mod thread;
-mod lifetimes;
+// mod lifetimes;
+
+mod single_iter;
 
 fn main() {
     // iterator::main();
@@ -18,5 +20,7 @@ fn main() {
     // closure_mut_v::main();
 
     // thread::main();
-    lifetimes::main();
+    // lifetimes::main();
+
+    single_iter::main();
 }
