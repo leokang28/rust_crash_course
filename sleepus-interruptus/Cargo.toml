@@ -1,5 +1,5 @@
 [package]
-name = "rust_crash_course"
+name = "sleepus-interruptus"
 version = "0.1.0"
 authors = ["kangsl <kangsl@weipaitang.com>"]
 edition = "2018"
@@ -8,11 +8,4 @@ edition = "2018"
 
 [dependencies]
 
-[workspace]
-
-members = [
-    "bouncy",
-    "bouncy4",
-    "clicky",
-    "sleepus-interruptus",
-]
+async-std = { version = "1.5.0", features = ["attributes"] }

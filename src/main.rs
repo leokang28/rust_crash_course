@@ -11,7 +11,11 @@
 
 // mod lifetimes2;
 
-mod lifetimes3;
+// mod lifetimes3;
+
+// mod slice;
+
+mod byteliteral;
 
 fn main() {
     // iterator::main();
@@ -28,5 +32,9 @@ fn main() {
 
     // single_iter::main();
     // lifetimes2::main();
-    lifetimes3::main();
+    // lifetimes3::main();
+    // slice::main();
+    byteliteral::main();
+
 }
+
